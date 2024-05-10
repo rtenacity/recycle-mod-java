@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "recyclemod:block/oven_in_use"
+    }
+  }
+}

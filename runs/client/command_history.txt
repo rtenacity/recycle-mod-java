@@ -1,0 +1,50 @@
+/scoreboard players list @p
+/scoreboard players display name @p Score
+/scoreboard objectives setdisplay sidebar Score
+/kill @p
+/give @p stick
+/kill @p
+/give @a minecraft:stick
+/give @p minecraft:wooden_axe
+/kill @p
+/kill @e[type=pig]
+/kill @p
+/operator @p
+/give @p minecraft:command_block
+/gamemode creative
+/weather clear
+/scoreboard objectives list
+/bossbar list
+/bossbar add recyclemod:timer "Timer"
+/bossbar get recyclemod:timer
+/bossbar get recyclemod:timer players
+/bossbar get recyclemod:timer visible
+/bossbar set recyclemod:timer visible true
+/bossbar set recyclemod:timer players @p
+/bossbar set recyclemod:timer max 600
+/gamemode creative
+/kill @e
+/gamerule doMobLoot false
+/kill @e
+/resetscore
+/give @p recyclemod:oven
+/give @p minecraft:command_block
+/give @p recyclemod:glass_crusher
+/give @p recyclemod:pulper
+/give @p recyclemod:wood_chipper
+/give @p recyclemod:send_machine
+/clear @p
+/resetscore
+/scoreboard objectives list
+/scoreboard players list
+/scoreboard players display name Dev Score
+/scoreboard objectives
+/scoreboard objectives setdisplay sidebar Score
+/resetscore
+/gamemode survival
+/clear
+/resetscore
+/gamerule naturalRegeneration false
+/resetscore
+/clear @p
+/effect give @p minecraft:saturation infinite 255 true

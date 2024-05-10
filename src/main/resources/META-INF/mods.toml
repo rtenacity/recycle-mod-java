@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="Not specified"
+
+[[mods]]
+modId="recyclemod"
+version="1.0.0"
+displayName="RecycleMod"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="Rohan, MCreator"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.recyclemod]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.4.223,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.recyclemod]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+

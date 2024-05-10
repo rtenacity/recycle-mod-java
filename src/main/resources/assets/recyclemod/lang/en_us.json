@@ -1,0 +1,21 @@
+{
+  "block.recyclemod.oven": "Oven",
+  "block.recyclemod.paper_recycler_in_use": "Paper Recycler In Use",
+  "block.recyclemod.pulper_in_use": "Pulper In Use",
+  "gui.recyclemod.answer_questions.button_a": "A",
+  "gui.recyclemod.answer_questions.button_b": "B",
+  "block.recyclemod.glass_crusher_in_use": "Glass Crusher In Use",
+  "block.recyclemod.wood_chipper_in_use": "Wood Chipper In Use",
+  "gui.recyclemod.answer_questions.button_c": "C",
+  "gui.recyclemod.answer_questions.button_d": "D",
+  "item.recyclemod.crushed_glass": "Crushed Glass",
+  "block.recyclemod.pulper": "Pulper",
+  "block.recyclemod.glass_crusher": "Glass Crusher",
+  "item.recyclemod.wet_pulp": "Wet Pulp",
+  "block.recyclemod.send_machine": "Send Machine",
+  "item.recyclemod.dry_pulp": "Dry Pulp",
+  "block.recyclemod.wood_chipper": "Wood Chipper",
+  "item.recyclemod.wood_chips": "Wood Chips",
+  "block.recyclemod.round_generator": "Round Generator",
+  "block.recyclemod.oven_in_use": "Oven In Use"
+}

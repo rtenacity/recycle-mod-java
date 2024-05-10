@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "recyclemod:block/furnace_top",
+    "up": "recyclemod:block/furnace_top",
+    "north": "recyclemod:block/furnace_side",
+    "east": "recyclemod:block/furnace_front",
+    "south": "recyclemod:block/furnace_side",
+    "west": "recyclemod:block/furnace_side",
+    "particle": "recyclemod:block/furnace_top"
+  },
+  "render_type": "solid"
+}

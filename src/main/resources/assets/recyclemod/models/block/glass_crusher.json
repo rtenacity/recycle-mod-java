@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "recyclemod:block/smithing_table_top",
+    "up": "recyclemod:block/smithing_table_top",
+    "north": "recyclemod:block/smithing_table_front",
+    "east": "recyclemod:block/smithing_table_side",
+    "south": "recyclemod:block/smithing_table_side",
+    "west": "recyclemod:block/smithing_table_side",
+    "particle": "recyclemod:block/smithing_table_top"
+  },
+  "render_type": "solid"
+}

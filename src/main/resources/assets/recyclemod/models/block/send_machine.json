@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "recyclemod:block/magenta_glazed_terracotta",
+    "up": "recyclemod:block/magenta_glazed_terracotta",
+    "north": "recyclemod:block/magenta_glazed_terracotta",
+    "east": "recyclemod:block/magenta_glazed_terracotta",
+    "south": "recyclemod:block/magenta_glazed_terracotta",
+    "west": "recyclemod:block/magenta_glazed_terracotta",
+    "particle": "recyclemod:block/magenta_glazed_terracotta"
+  },
+  "render_type": "solid"
+}

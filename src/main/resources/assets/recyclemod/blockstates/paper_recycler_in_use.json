@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "recyclemod:block/paper_recycler_in_use"
+    }
+  }
+}

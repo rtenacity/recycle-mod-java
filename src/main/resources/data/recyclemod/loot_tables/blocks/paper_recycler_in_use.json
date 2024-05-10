@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "recyclemod:blocks/paper_recycler_in_use",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "recyclemod:paper_recycler_in_use"
+        }
+      ]
+    }
+  ]
+}

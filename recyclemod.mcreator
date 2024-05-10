@@ -1,0 +1,898 @@
+{
+  "mod_elements": [
+    {
+      "name": "OnRightClickVillager",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_right_click_villager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/OnRightClickVillagerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RoundGenerator",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "round_generator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/blockstates/round_generator.json",
+          "src/main/java/net/mcreator/recyclemod/block/RoundGeneratorBlock.java",
+          "src/main/resources/assets/recyclemod/models/item/round_generator.json",
+          "src/main/resources/assets/recyclemod/models/block/round_generator.json",
+          "src/main/resources/data/recyclemod/loot_tables/blocks/round_generator.json"
+        ]
+      }
+    },
+    {
+      "name": "RoundGeneratorRedstoneOn",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "round_generator_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/RoundGeneratorRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckScore",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_score",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/CheckScoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ResetScore",
+      "type": "command",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_score",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/command/ResetScoreCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ResetScoreProcedure",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_score_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/ResetScoreProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pulper",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pulper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/block/pulper.json",
+          "src/main/resources/data/recyclemod/loot_tables/blocks/pulper.json",
+          "src/main/resources/assets/recyclemod/models/item/pulper.json",
+          "src/main/java/net/mcreator/recyclemod/block/PulperBlock.java",
+          "src/main/resources/assets/recyclemod/blockstates/pulper.json"
+        ]
+      }
+    },
+    {
+      "name": "PulperInUse",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pulper_in_use",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/block/pulper_in_use.json",
+          "src/main/resources/data/recyclemod/loot_tables/blocks/pulper_in_use.json",
+          "src/main/resources/assets/recyclemod/blockstates/pulper_in_use.json",
+          "src/main/java/net/mcreator/recyclemod/block/PulperInUseBlock.java",
+          "src/main/resources/assets/recyclemod/models/item/pulper_in_use.json"
+        ]
+      }
+    },
+    {
+      "name": "WetPulp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wet_pulp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/item/wet_pulp.json",
+          "src/main/java/net/mcreator/recyclemod/item/WetPulpItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PulperRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pulper_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/PulperRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oven",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oven",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/block/oven.json",
+          "src/main/resources/data/recyclemod/loot_tables/blocks/oven.json",
+          "src/main/resources/assets/recyclemod/blockstates/oven.json",
+          "src/main/java/net/mcreator/recyclemod/block/OvenBlock.java",
+          "src/main/resources/assets/recyclemod/models/item/oven.json"
+        ]
+      }
+    },
+    {
+      "name": "OvenInUse",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oven_in_use",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/block/oven_in_use.json",
+          "src/main/resources/assets/recyclemod/models/item/oven_in_use.json",
+          "src/main/java/net/mcreator/recyclemod/block/OvenInUseBlock.java",
+          "src/main/resources/data/recyclemod/loot_tables/blocks/oven_in_use.json",
+          "src/main/resources/assets/recyclemod/blockstates/oven_in_use.json"
+        ]
+      }
+    },
+    {
+      "name": "DryPulp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dry_pulp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/item/DryPulpItem.java",
+          "src/main/resources/assets/recyclemod/models/item/dry_pulp.json"
+        ]
+      }
+    },
+    {
+      "name": "OvenRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oven_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/OvenRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SendMachine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_machine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/block/send_machine.json",
+          "src/main/resources/assets/recyclemod/blockstates/send_machine.json",
+          "src/main/resources/data/recyclemod/loot_tables/blocks/send_machine.json",
+          "src/main/java/net/mcreator/recyclemod/block/SendMachineBlock.java",
+          "src/main/resources/assets/recyclemod/models/item/send_machine.json"
+        ]
+      }
+    },
+    {
+      "name": "SendMachineRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_machine_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/SendMachineRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnPlayerDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/OnPlayerDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlassCrusher",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_crusher",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recyclemod/loot_tables/blocks/glass_crusher.json",
+          "src/main/resources/assets/recyclemod/models/block/glass_crusher.json",
+          "src/main/java/net/mcreator/recyclemod/block/GlassCrusherBlock.java",
+          "src/main/resources/assets/recyclemod/blockstates/glass_crusher.json",
+          "src/main/resources/assets/recyclemod/models/item/glass_crusher.json"
+        ]
+      }
+    },
+    {
+      "name": "GlassCrusherRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_crusher_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/GlassCrusherRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlassCrusherInUse",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_crusher_in_use",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/item/glass_crusher_in_use.json",
+          "src/main/resources/data/recyclemod/loot_tables/blocks/glass_crusher_in_use.json",
+          "src/main/resources/assets/recyclemod/models/block/glass_crusher_in_use.json",
+          "src/main/java/net/mcreator/recyclemod/block/GlassCrusherInUseBlock.java",
+          "src/main/resources/assets/recyclemod/blockstates/glass_crusher_in_use.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodChipper",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_chipper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/block/wood_chipper.json",
+          "src/main/java/net/mcreator/recyclemod/block/WoodChipperBlock.java",
+          "src/main/resources/assets/recyclemod/blockstates/wood_chipper.json",
+          "src/main/resources/data/recyclemod/loot_tables/blocks/wood_chipper.json",
+          "src/main/resources/assets/recyclemod/models/item/wood_chipper.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodChipperRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_chipper_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/WoodChipperRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WoodChipperInUse",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_chipper_in_use",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recyclemod/loot_tables/blocks/wood_chipper_in_use.json",
+          "src/main/resources/assets/recyclemod/models/item/wood_chipper_in_use.json",
+          "src/main/resources/assets/recyclemod/models/block/wood_chipper_in_use.json",
+          "src/main/java/net/mcreator/recyclemod/block/WoodChipperInUseBlock.java",
+          "src/main/resources/assets/recyclemod/blockstates/wood_chipper_in_use.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodChips",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_chips",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/item/WoodChipsItem.java",
+          "src/main/resources/assets/recyclemod/models/item/wood_chips.json"
+        ]
+      }
+    },
+    {
+      "name": "AnswerQuestions",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "answer_questions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/network/AnswerQuestionsButtonMessage.java",
+          "src/main/java/net/mcreator/recyclemod/client/gui/AnswerQuestionsScreen.java",
+          "src/main/java/net/mcreator/recyclemod/world/inventory/AnswerQuestionsMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "GetQuestion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_question",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/GetQuestionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GetChoiceA",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_choice_a",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/GetChoiceAProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GetChoiceB",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_choice_b",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/GetChoiceBProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GetChoiceC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_choice_c",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/GetChoiceCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GetChoiceD",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_choice_d",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/GetChoiceDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenQuestionGUI",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_question_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/command/OpenQuestionGUICommand.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenQuestionProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_question_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/OpenQuestionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnButtonAPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_button_a_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/OnButtonAPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnButtonBPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_button_b_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/OnButtonBPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnButtonCPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_button_c_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/OnButtonCPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnButtonDPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_button_d_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/OnButtonDPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrushedGlass",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crushed_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recyclemod/models/item/crushed_glass.json",
+          "src/main/java/net/mcreator/recyclemod/item/CrushedGlassItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SetQuestion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_question",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recyclemod/procedures/SetQuestionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "score",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "does_have",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "loopNum",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "round",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "question",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "choiceA",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "choiceB",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "chioiceC",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "choiceD",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "correctAnswer",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "block.recyclemod.oven": "Oven",
+      "block.recyclemod.paper_recycler_in_use": "Paper Recycler In Use",
+      "block.recyclemod.pulper_in_use": "Pulper In Use",
+      "gui.recyclemod.answer_questions.button_a": "A",
+      "gui.recyclemod.answer_questions.button_b": "B",
+      "block.recyclemod.glass_crusher_in_use": "Glass Crusher In Use",
+      "block.recyclemod.wood_chipper_in_use": "Wood Chipper In Use",
+      "gui.recyclemod.answer_questions.button_c": "C",
+      "gui.recyclemod.answer_questions.button_d": "D",
+      "item.recyclemod.crushed_glass": "Crushed Glass",
+      "block.recyclemod.pulper": "Pulper",
+      "block.recyclemod.glass_crusher": "Glass Crusher",
+      "item.recyclemod.wet_pulp": "Wet Pulp",
+      "block.recyclemod.send_machine": "Send Machine",
+      "item.recyclemod.dry_pulp": "Dry Pulp",
+      "block.recyclemod.wood_chipper": "Wood Chipper",
+      "item.recyclemod.wood_chips": "Wood Chips",
+      "block.recyclemod.round_generator": "Round Generator",
+      "block.recyclemod.oven_in_use": "Oven In Use"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "recyclemod",
+    "modName": "RecycleMod",
+    "version": "1.0.0",
+    "author": "Rohan, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.4",
+    "modElementsPackage": "net.mcreator.recyclemod"
+  },
+  "mcreatorVersion": 202400115821
+}

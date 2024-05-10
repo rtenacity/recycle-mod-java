@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "recyclemod:block/white",
+    "up": "recyclemod:block/white",
+    "north": "recyclemod:block/white",
+    "east": "recyclemod:block/white",
+    "south": "recyclemod:block/white",
+    "west": "recyclemod:block/white",
+    "particle": "recyclemod:block/white"
+  },
+  "render_type": "solid"
+}

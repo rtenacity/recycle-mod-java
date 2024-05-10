@@ -1,0 +1,93 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 2024-05-04 21:58:11
+Description: Exception in server tick loop
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.entity.Entity.getCapability(net.neoforged.neoforge.capabilities.EntityCapability, Object)" because the return value of "java.util.Optional.orElse(Object)" is null
+	at net.mcreator.recyclemod.procedures.RoundGeneratorRedstoneOnProcedure.lambda$execute$2(RoundGeneratorRedstoneOnProcedure.java:66) ~[%23194!/:?] {re:classloading}
+	at net.mcreator.recyclemod.RecyclemodMod.lambda$tick$2(RecyclemodMod.java:88) ~[%23194!/:?] {re:classloading}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {}
+	at net.mcreator.recyclemod.RecyclemodMod.tick(RecyclemodMod.java:88) ~[%23194!/:?] {re:classloading}
+	at net.neoforged.bus.EventBus.post(EventBus.java:386) ~[bus-7.2.0.jar%23116!/:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:351) ~[bus-7.2.0.jar%23116!/:?] {}
+	at net.neoforged.neoforge.event.EventHooks.onPostServerTick(EventHooks.java:850) ~[neoforge-20.4.223.jar%23192%23195!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:882) ~[neoforge-20.4.223.jar%23193!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:106) ~[neoforge-20.4.223.jar%23193!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:700) ~[neoforge-20.4.223.jar%23193!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:255) ~[neoforge-20.4.223.jar%23193!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.4
+	Minecraft Version ID: 1.20.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.10, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 1163544968 bytes (1109 MiB) / 2023751680 bytes (1930 MiB) up to 4236247040 bytes (4040 MiB)
+	CPUs: 16
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i5-12600K
+	Identifier: Intel64 Family 6 Model 151 Stepping 2
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 3.69
+	Number of physical packages: 1
+	Number of physical CPUs: 10
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 3060
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2504
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.5212
+	Graphics card #1 name: Intel(R) UHD Graphics 770
+	Graphics card #1 vendor: Intel Corporation (0x8086)
+	Graphics card #1 VRAM (MB): 1024.00
+	Graphics card #1 deviceId: 0x4680
+	Graphics card #1 versionInfo: DriverVersion=31.0.101.4577
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.40
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 34147.48
+	Virtual memory used (MB): 30593.78
+	Swap memory total (MB): 17989.75
+	Swap memory used (MB): 3730.16
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/14, l='ServerLevel[New World]', x=48.67, y=-60.00, z=-7.56, removed=KILLED]]
+	Data Packs: vanilla, mod_data, mod:recyclemod (incompatible), mod:neoforge
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 20.4.223
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		sponge-mixin-0.13.1+mixin.0.8.5.jar mixin PLUGINSERVICE 
+		loader-2.0.17.jar slf4jfixer PLUGINSERVICE 
+		loader-2.0.17.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-2.0.17.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar mixin-synthetic-package TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@2.0
+		lowcodefml@2.0
+		minecraft@2.0
+	Mod List: 
+		neoforge-20.4.223.jar                             |Minecraft                     |minecraft                     |1.20.4              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |RecycleMod                    |recyclemod                    |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		                                                  |NeoForge                      |neoforge                      |20.4.223            |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: fa8cd572-686f-422e-a030-fc7db3aa7f80
+	FML: 20.4
+	NeoForge: net.neoforged:20.4.223

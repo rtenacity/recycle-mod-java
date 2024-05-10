@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "recyclemod:block/cauldron_bottom",
+    "up": "recyclemod:block/cauldron_top",
+    "north": "recyclemod:block/cauldron_side",
+    "east": "recyclemod:block/cauldron_side",
+    "south": "recyclemod:block/cauldron_side",
+    "west": "recyclemod:block/cauldron_side",
+    "particle": "recyclemod:block/cauldron_bottom"
+  },
+  "render_type": "solid"
+}

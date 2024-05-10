@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "recyclemod:block/fletching_table_top",
+    "up": "recyclemod:block/fletching_table_top",
+    "north": "recyclemod:block/fletching_table_front",
+    "east": "recyclemod:block/fletching_table_side",
+    "south": "recyclemod:block/fletching_table_side",
+    "west": "recyclemod:block/fletching_table_side",
+    "particle": "recyclemod:block/fletching_table_top"
+  },
+  "render_type": "solid"
+}

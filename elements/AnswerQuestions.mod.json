@@ -1,0 +1,162 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 417,
+    "height": 167,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a",
+          "text": "A",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OnButtonAPress"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 138,
+          "y": 172
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b",
+          "text": "B",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OnButtonBPress"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 175,
+          "y": 172
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c",
+          "text": "C",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OnButtonCPress"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 215,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_question",
+          "text": {
+            "fixedValue": "",
+            "name": "GetQuestion"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 16,
+          "y": 50
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_d",
+          "text": "D",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OnButtonDPress"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 254,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_choice_a",
+          "text": {
+            "fixedValue": "",
+            "name": "GetChoiceA"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 16,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_choice_b",
+          "text": {
+            "fixedValue": "",
+            "name": "GetChoiceB"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 16,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_choice_c",
+          "text": {
+            "fixedValue": "",
+            "name": "GetChoiceC"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 16,
+          "y": 112
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_choice_d",
+          "text": {
+            "fixedValue": "",
+            "name": "GetChoiceD"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 16,
+          "y": 132
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
